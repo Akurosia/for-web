@@ -40,7 +40,7 @@ services:
     environment:
       NODE_END: production
       DOCKER_ENV: "true"
-      ALLOWED_ORIGINS: "${HOSTNAME:-http://localhost:8080}"
+      ALLOWED_ORIGINS: "${HOSTNAME:-http://local.stoat.chat:8080}"
     develop:
       watch:
         - action: sync+exec
